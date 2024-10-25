@@ -23,5 +23,5 @@ void pritnvalues(int Num){
 }
 
 int main(){
-    pritnvalues(ReadNumper("Please Enter Your Number : "));
+    pritnvalues(ReadNumper(" Please Enter Your Number : "));
 }
