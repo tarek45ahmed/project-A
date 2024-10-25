@@ -1,21 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int ReadNumper(string Massage){
-    int Numper = 0;
-    do
-    {
-        cout << Massage;
-        cin >> Numper; 
-    } while (Numper <= 0); 
-    return Numper;
+int ReadNumber(string Message){
+    int Number = 0;
+    do {
+        cout << Message;
+        cin >> Number;
+    } while (Number <= 0);
+    return Number;
 }
 
-void pritnvalues(int Num){
-    for (int i = 1; i <= Num; i++)
-    {
-        for (int l = 1; l <= i; l++)
-        {
+void printValues(int Num){
+    for (int i = 1; i <= Num; i++) {
+        for (int l = 1; l <= i; l++) {
             cout << "*";
         }
         cout << endl;
@@ -23,6 +20,6 @@ void pritnvalues(int Num){
 }
 
 int main(){
-    pritnvalues(ReadNumper(" Please Enter Your Number : "));
+    printValues(ReadNumber("Please Enter Your Number: "));
     
 }
