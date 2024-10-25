@@ -6,8 +6,8 @@ int ReadNumper(string Massage){
     do
     {
         cout << Massage;
-        cin >> Numper; //5
-    } while (Numper <= 0); // if Numper <= 0 try again
+        cin >> Numper; 
+    } while (Numper <= 0); 
     return Numper;
 }
 
@@ -24,4 +24,5 @@ void pritnvalues(int Num){
 
 int main(){
     pritnvalues(ReadNumper(" Please Enter Your Number : "));
+    
 }
